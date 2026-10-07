@@ -33,10 +33,9 @@ import (
 	for _, record := range records {
 		fmt.Printf("ID: %s, Name: %s, Email: %s\n", record[0], record[1], record[2])
 	}
-}*/ 
+}*/
 
-
-//2
+// 2
 type Product struct {
 	ID    int
 	Name  string
@@ -81,8 +80,7 @@ type Product struct {
 	fmt.Println("Файл products.csv успешно создан.")
 }*/
 
-
-//3
+// 3
 func main() {
 	//открываем файл
 	file, err := os.Open("products.csv")
@@ -121,7 +119,7 @@ func main() {
 		}
 		loadedProducts = append(loadedProducts, product)
 	}
-	//вывод данных на экран	
+	//вывод данных на экран
 	for _, product := range loadedProducts {
 		fmt.Printf("ID: %d, Name: %s, Price: %.2f\n", product.ID, product.Name, product.Price)
 	}
